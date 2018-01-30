@@ -1,0 +1,16 @@
+Check Type:
+			typeof :To verify the type : typeof myDateString
+			instanceof :verify the type : myDate instanceof Date
+			
+	Date:
+		Date() method which returns the current date as a string.
+		new Date() constructor which returns a Date object using the ISODate() wrapper.
+		ISODate() constructor which returns a Date object using the ISODate() wrapper.
+	ObjectId:
+		new ObjectId:generate a new ObjectId,
+	NumberLong:
+		NumberLong("2090845886852") :accepts the long as a string:
+	NumberInt:
+		NumberInt():specify 32-bit integers.
+	NumberDecimal:
+		NumberDecimal() :explicitly specify 128-bit decimal-based floating-point values 
