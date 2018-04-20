@@ -23,24 +23,46 @@
     4.3,Change the mongo Shell Batch Size
         DBQuery.shellBatchSize = 10;
 5,shell
+    #Tab键提示相似命令
+    show dbs                     show database names
+    show collections             show collections in current database
+    show users                   show users in current database
+    show profile                 show most recent system.profile entries with time >= 1ms
+    show logs                    show the accessible logger names
+    show log [name]              prints out the last segment of log in memory, 'global' is default
+    use <db_name>                set current database
+    it                           result of the last line evaluated; use to further iterate
+    DBQuery.shellBatchSize = x   set default number of items to display on shell
+    exit                         quit the mongo shell
     function:
         function functionName () { } : Define a function
         edit functionName :
         [db.][collection.]functionName : To see the method implementation ( without the parenthesis (()) )
         functionName() : use function
+    variable:
+        var mydoc = {
+                _id: ObjectId("5099803df3f4948bd2f98391"),
+                name: { first: "Alan", last: "Turing" },
+                birth: new Date('Jun 23, 1912'),
+                death: new Date('Jun 07, 1954'),
+                contribs: [ "Turing machine", "Turing test", "Turingery" ],
+                views : NumberLong(1250000)
+        }
 6,help
     mongo --help
     help ( in the mongo shell )
     [db.][collection.]functionName().help()
-
-
-
-
-    var mydoc = {
-                   _id: ObjectId("5099803df3f4948bd2f98391"),
-                   name: { first: "Alan", last: "Turing" },
-                   birth: new Date('Jun 23, 1912'),
-                   death: new Date('Jun 07, 1954'),
-                   contribs: [ "Turing machine", "Turing test", "Turingery" ],
-                   views : NumberLong(1250000)
-    }
+    sh.help()                    sharding helpers
+    rs.help()                    replica set helpers
+    help admin                   administrative help
+    help connect                 connecting to a db help
+    help keys                    key shortcuts
+    help misc                    misc things to know
+    help mr                      mapreduce
+7,Shell JavaScript
+    #use mongo to evaluate JavaScript:mongo databaseName --eval "<js code>"
+    #loads and executes the myjstest.js file: > load("myjstest.js")
+    #Wrapper Object
+    >help misc						# list of the wrapper classes
+8,history
+9,log

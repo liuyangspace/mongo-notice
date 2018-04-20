@@ -1,0 +1,4 @@
+> use admin
+switched to db admin
+> db.addUser("root","1983") 创建连接用户
+> db.auth("root","1983") 进行用户验证

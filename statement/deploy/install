@@ -1,0 +1,7 @@
+mongoDB
+home:https://docs.mongodb.com/manual/
+
+1,install
+	Ubuntu: sudo apt-get install mongodb 安装 MongoDB\
+	CentOS: yum install -y mongodb-enterprise
+	other: https://docs.mongodb.com/manual/installation/

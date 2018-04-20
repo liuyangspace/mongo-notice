@@ -1,5 +1,0 @@
-mongo
-
-1,help:
-    mongo --help
-    help ( in the mongo shell )
