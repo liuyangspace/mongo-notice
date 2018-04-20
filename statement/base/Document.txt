@@ -1,0 +1,12 @@
+
+
+
+
+1,Stores : MongoDB stores data records as BSON <http://bsonspec.org> documents,binary representation of JSON.
+2,Structure : documents are composed of field-and-value pairs,JSON format.
+3,Field Names :
+    1),The field name _id is reserved for use as a primary key
+    2),cannot start with the dollar sign ($) character
+    3),cannot contain the dot (.) character
+    4),cannot contain the null character
+

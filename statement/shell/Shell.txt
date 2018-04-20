@@ -1,0 +1,46 @@
+
+1,Start
+    command : mongo
+2,Exit the Shell
+    quit()
+    Ctrl-C>
+3,Multi-line Operations
+    start : ( [ {
+    end : ) ] }
+4,Configure
+    4.1,Prompt : prompt variable can hold strings as well as JavaScript code.
+        Display Number:
+            cmdCount = 1;
+            prompt = function() { return (cmdCount++) + "> "; }
+        Display Database and Hostname:
+            prompt = function() { return db+"@"+db.serverStatus().host+"$ "; }
+        Display Up Time and Document Count:
+            prompt = function() { return "Uptime:"+db.serverStatus().uptime+" Documents:"+db.stats().objects+" > "; }
+    4.2,Use an External Editor
+        setting the EDITOR environment variable:
+            export EDITOR=vim
+            mongo
+    4.3,Change the mongo Shell Batch Size
+        DBQuery.shellBatchSize = 10;
+5,shell
+    function:
+        function functionName () { } : Define a function
+        edit functionName :
+        [db.][collection.]functionName : To see the method implementation ( without the parenthesis (()) )
+        functionName() : use function
+6,help
+    mongo --help
+    help ( in the mongo shell )
+    [db.][collection.]functionName().help()
+
+
+
+
+    var mydoc = {
+                   _id: ObjectId("5099803df3f4948bd2f98391"),
+                   name: { first: "Alan", last: "Turing" },
+                   birth: new Date('Jun 23, 1912'),
+                   death: new Date('Jun 07, 1954'),
+                   contribs: [ "Turing machine", "Turing test", "Turingery" ],
+                   views : NumberLong(1250000)
+    }

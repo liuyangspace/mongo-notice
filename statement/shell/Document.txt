@@ -1,0 +1,15 @@
+
+
+
+1,config
+    DBQuery.shellBatchSize = 10 : Change the mongo Shell Batch Size
+2,help
+    db.collection.find().help()
+3,Insert
+    db.collectionName.insertMany()
+    db.collectionName.insertOne()
+4,Query
+    db.collectionName.find()[.pretty()]
+    QueryStr:
+        "<array>.<index>": specify or access an element of an array <https://docs.mongodb.com/manual/core/document/#arrays>
+        "<embedded document>.<field>" : specify or access a field of an embedded document with dot notation <https://docs.mongodb.com/manual/core/document/#embedded-documents>

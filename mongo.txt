@@ -1,0 +1,15 @@
+MongoDB
+
+1,Info
+    Home: https://docs.mongodb.com
+    Documend:
+        MongoDB: https://docs.mongodb.com/manual/tutorial/getting-started/
+2,Features
+    Document Database (composed of field and value,The values of fields may include other documents, arrays, and arrays of documents.)
+    High Performance
+    Rich Query Language
+    High Availability
+    Horizontal Scalability
+    Support for Multiple Storage Engines (such as: WiredTiger Storage Engine , MMAPv1 Storage Engine.)
+3,Store
+    MongoDB stores BSON documents, i.e. data records, in collections; the collections in databases.

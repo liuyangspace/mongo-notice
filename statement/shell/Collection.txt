@@ -1,0 +1,14 @@
+
+1,shell
+    show collections
+    db.collection.help()
+    db.getCollectionInfos() ; list collections
+    db.getCollectionNames()
+    db.getCollection("collectionName") : get collection if a collection name contains a space or hyphen
+Capped:
+    db.createCollection("collectionName", { capped : true, size : 5242880, max : 5000 } )
+        size: size of the collection in bytes
+        max:max number of documents,(MongoDB will remove older documents)
+    db.cappedCollection.find().sort( { $natural: -1 } ) : reverse insertion order
+    db.collection.isCapped()    : Check if a Collection is Capped
+    db.runCommand({"convertToCapped": "mycoll", size: 100000})  : Convert a Collection to Capped

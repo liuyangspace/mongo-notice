@@ -1,0 +1,19 @@
+View
+( Starting in version 3.4 )
+1,Create
+    db.runCommand( { create: <view>, viewOn: <source>, pipeline: <pipeline>, collation: <collation> } )
+    db.createView(<view>, <source>, <pipeline>, <collation> )
+2,Behavior
+    Views are read-only
+3,Supported Operations
+    Commands	Methods
+    create	    db.createCollection()
+                db.createView()
+    collMod	    db.getCollection()
+                db.getCollectionInfos()
+                db.getCollectionNames()
+    find        db.collection.aggregate()
+    distinct    db.collection.find()
+    count       db.collection.findOne()
+                db.collection.count()
+                db.collection.distinct()

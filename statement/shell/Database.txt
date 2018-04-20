@@ -1,0 +1,6 @@
+
+    db
+    show dbs
+    db.help()
+    use dbName : switch/create db
+    db.getSiblingDB("dbName") :  access a different database from the current database without switching your current database
